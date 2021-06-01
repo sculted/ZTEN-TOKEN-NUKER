@@ -1,4 +1,3 @@
-# credit: https://github.com/fweak for 50% of recode
 
 import requests
 import platform
