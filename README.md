@@ -9,3 +9,4 @@ Installation if you don't have the above. python -m pip install colorama
 Run the file and you should be good to go. 
 
 
+discord.gg/whD9PVAe for support. dm modmail.
