@@ -12,7 +12,7 @@ init(convert=True)
 
 CHROME_DRIVER_PATH = 'chromedriver.exe'
 
-class Jajaja:
+class ZTEN:
     def __init__(self, token: str, thread_count: str):
         self.threads = list()
         self.thread_count = int(thread_count)
