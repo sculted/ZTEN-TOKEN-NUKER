@@ -50,7 +50,7 @@ class Jajaja:
         try:
             if status == 429:
                 data = json.loads(body)
-                print(f'[Jajaja] -> Discord Ratelimit :: {data["retry_after"]}')
+                print(f'[ZTEN] -> Discord Ratelimit :: {data["retry_after"]}')
                 time.sleep(body["retry_after"])
                 pass
         except:
@@ -175,10 +175,10 @@ class Jajaja:
             return self.input_loop()
 
 if __name__ == '__main__':
-    token = Jajaja.ask(f'[{Fore.YELLOW}>{Fore.RESET}] Enter Token')
-    threads = Jajaja.ask(f'[{Fore.YELLOW}>{Fore.RESET}] Enter Threads')
+    token = ZTEN.ask(f'[{Fore.YELLOW}>{Fore.RESET}] Enter Token')
+    threads = ZTEN.ask(f'[{Fore.YELLOW}>{Fore.RESET}] Enter Threads')
 
-    client = Jajaja(token, threads)
+    client = ZTEN(token, threads)
     if not client.check_token():
         print(f'[{Fore.YELLOW}!{Fore.RESET}] Invalid token input.')
     else:
